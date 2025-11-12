@@ -9,6 +9,9 @@ This project combines quantum physics and modern web technology to create a true
 1. **Firmware** - MicroPython code running on RP2040 (W5500-EVB-Pico) that collects gamma-ray events
 2. **Web Application** - Flask-based server that processes and visualizes the random data
 
+Blog-Article: 
+[https://github.com/user/repo/blob/branch/other_file.md](https://atlane.de/request-a-decision-from-the-universe/))
+
 ## 🎯 Features
 
 ### Firmware (RP2040 Dual-Core)
