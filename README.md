@@ -168,17 +168,9 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 openssl rand -hex 32
 ```
 
-### Security Best Practices
-
-1. **Use HTTPS**: Always use HTTPS in production
-2. **Strong Tokens**: Use cryptographically secure random tokens (≥32 bytes)
-3. **Firewall**: Restrict access to backend server
-4. **Rate Limiting**: Already implemented, but monitor for abuse
-5. **Docker User**: Application runs as non-root user (UID 1000)
-
 ## 📊 NIST Randomness Tests
 
-The application includes a comprehensive NIST SP 800-22 statistical test suite for validating randomness quality:
+The application includes some statistical tests for validating randomness quality:
 
 - **Frequency (Monobit) Test**
 - **Block Frequency Test**
@@ -311,34 +303,6 @@ Monitor the Flask application:
 - Last device ping: Displayed on main page
 - Database query performance
 - WebSocket connection status
-
-## 🛠️ Troubleshooting
-
-### Firmware Issues
-
-**Device not connecting to network:**
-- Check `config.py` settings
-- Verify network cable connection
-- Check DHCP server logs
-- Try static IP configuration
-
-**Data not uploading:**
-- Verify `AUTH_TOKEN` matches between firmware and backend
-- Check firewall rules
-- Monitor device web interface for errors
-- Check backend server logs
-
-### Web Application Issues
-
-**Database errors:**
-- Ensure `instance/` directory has write permissions
-- Check disk space
-- Verify SQLite is installed
-
-**WebSocket not connecting:**
-- Check CORS settings in `.env`
-- Verify firewall allows WebSocket connections
-- Check browser console for errors
 
 ## 📈 Performance
 
