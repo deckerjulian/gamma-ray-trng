@@ -2,15 +2,15 @@
 
 A hardware-based True Random Number Generator using gamma-ray detection with a dual-core RP2040 microcontroller and a Flask-based web application for visualization and randomness testing.
 
+Blog-Article: 
+[https://github.com/user/repo/blob/branch/other_file.md](https://atlane.de/request-a-decision-from-the-universe/)
+
 ## 🌟 Overview
 
 This project combines quantum physics and modern web technology to create a true random number generator. It uses gamma-ray detection events from radioactive decay to generate cryptographically secure random numbers. The system consists of two main components:
 
 1. **Firmware** - MicroPython code running on RP2040 (W5500-EVB-Pico) that collects gamma-ray events
 2. **Web Application** - Flask-based server that processes and visualizes the random data
-
-Blog-Article: 
-[https://github.com/user/repo/blob/branch/other_file.md](https://atlane.de/request-a-decision-from-the-universe/))
 
 ## 🎯 Features
 
