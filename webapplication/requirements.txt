@@ -1,0 +1,12 @@
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-SocketIO==5.3.6
+matplotlib==3.7.2
+Pillow==10.0.1
+better-profanity==0.7.0
+eventlet==0.33.3
+random-username==1.0.2
+numpy==1.24.3
+scipy==1.11.3
+requests==2.31.0
+python-dotenv==1.0.0

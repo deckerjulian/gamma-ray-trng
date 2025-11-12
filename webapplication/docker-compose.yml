@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  trng-webapp:
+    build: .
+    container_name: trng-app
+    restart: unless-stopped
+    ports:
+      - "5002:5000"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./instance:/app/instance:rw
+    user: "10002:1003"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5000/health', timeout=10)"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+      start_period: 40s
+    networks:
+      - trng-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  trng-network:
+    driver: bridge

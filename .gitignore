@@ -1,0 +1,71 @@
+# Environment variables - SENSITIVE!
+webapplication/instance/.env
+
+# Firmware sensitive configuration - SENSITIVE!
+firmware/config.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Database files - instance data
+webapplication/instance/*.db
+webapplication/instance/*.db-shm
+webapplication/instance/*.db-wal
+webapplication/instance/random_bits.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# OS - macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# OS - Windows
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Docker
+.dockerignore
+
+# MicroPython compiled
+*.mpy
