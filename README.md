@@ -145,29 +145,6 @@ gamma-ray-trng/
 5. **Access the web interface:**
    - Open `http://localhost:5000` in your browser
 
-## 🔐 Security
-
-### Important Security Notes
-
-⚠️ **NEVER commit sensitive data to version control!**
-
-The following files contain sensitive information and are gitignored:
-- `firmware/config.py` - Device credentials and network settings
-- `webapplication/instance/.env` - Server secrets and API tokens
-- `webapplication/instance/*.db` - Database files
-
-### Generating Secure Tokens
-
-Generate a strong authentication token:
-
-```bash
-# Linux/macOS
-python -c "import secrets; print(secrets.token_urlsafe(32))"
-
-# Or use openssl
-openssl rand -hex 32
-```
-
 ## 📊 NIST Randomness Tests
 
 The application includes some statistical tests for validating randomness quality:
